@@ -17,13 +17,21 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from apps.estetica.views import Home
-
+from django.conf import settings
+from django.conf.urls.static import static
 #api
 from django.conf.urls import url
 
-
 urlpatterns = [
+
     path('admin/', admin.site.urls),
+    path('course/', include('course.urls')),
+
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns = [
+
+    path('admin/', admin.site.urls),
+    path('course/', include('course.urls')),
   #  path('estetica/',include(('apps.estetica.urls','estetica'))),
     path('home/',Home, name='index'),
 ]
