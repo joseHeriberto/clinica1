@@ -19,7 +19,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# SECURITY WARNING: Procfile the secret key used in production secret!
 SECRET_KEY = '&*z5segl#2@9e%lnb=fqo#3mi_4kp_eqm1)qr+4(r9^i$l06gn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'clinica.wsgi.application'
 import dj_database_url
 from decouple import config
 
-DATABASE = {
+DATABASES = {
     'default': dj_database_url.config(
         default=config('DATABASE_URL')
     )
