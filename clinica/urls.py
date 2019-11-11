@@ -31,7 +31,7 @@ urlpatterns = [
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    #path('course/', include('course.urls')),
+
   #  path('estetica/',include(('apps.estetica.urls','estetica'))),
     path('home/',Home, name='index'),
 ]

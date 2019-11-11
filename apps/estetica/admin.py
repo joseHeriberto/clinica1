@@ -4,7 +4,7 @@ from .models import Diagnostico,Usuario,Servicio,Factura,Historia_clinica,Insumo
 from django.contrib import admin
 from django.contrib.auth.models import Group, User
 
-admin.site.site_header = 'Clinica'
+admin.site.site_header = 'PRHOMEX ESTHETIC'
 
 admin.site.register(Diagnostico)
 admin.site.register(Factura)
