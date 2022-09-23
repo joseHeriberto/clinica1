@@ -9,7 +9,7 @@ heroku==0.1.4
 idna==2.8
 mysql-connector-python==8.0.17
 mysqlclient==1.4.4
-protobuf==3.10.0
+protobuf==3.18.3
 psycopg2==2.8.4
 python-dateutil==1.5
 python-decouple==3.1
